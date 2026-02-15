@@ -1,33 +1,83 @@
-Hallo und willkommen! Dieses README bietet eine kurze Übersicht über das Projekt MeteoFrendo:
+# MeteoFrendo
 
-Projekt: MeteoFrendo
-Modul: M293
-Autor: Srecko Radisavljevic (Srele)
-Schule: Benedict Schule Luzern
-Jahr: 2025
+MeteoFrendo ist eine Webanwendung zur Anzeige von aktuellen Wetterdaten und Vorhersagen.
+Die Applikation greift auf die Open-Meteo API zu und wurde im Rahmen der Ausbildung als Informatiker EFZ (Applikationsentwicklung) entwickelt.
 
-Beschreibung:
-MeteoFrendo ist eine Web-Applikation zur Anzeige von Wetterdaten.
-Die Anwendung nutzt die Open-Meteo API und wurde als Schulprojekt umgesetzt.
+Live-Version:
+https://asmrrax-star.github.io/meteo-frendo/
 
-Funktionen:
-- Aktuelles Wetter (Quick-Weather)
-- 7-Tage-Vorhersage
-- Stadtsuche mit Geocoding
-- Favoriten (LocalStorage)
-- Kontaktformular (ohne Backend, lokale Speicherung)
-- Responsives Layout
+---
 
-Technologien:
-- HTML5
-- CSS
-- JavaScript
-- Open-Meteo API
+## Funktionen
 
-Hinweis:
-Dieses Projekt dient ausschliesslich zu Lern- und Demonstrationszwecken.
-Hinweis 2:
-Für die korrekte Ausführung (ES-Module) sollte das Projekt über einen lokalen Webserver geöffnet werden,
-Zum Beispiel mit: 
-npx http-server
-oder einer VS-Code Live-Server Extension.
+* Suche nach Städten weltweit
+* Anzeige aktueller Wetterdaten
+* Mehrtägige Wettervorhersage
+* Favoriten speichern (LocalStorage)
+* Responsives Layout für verschiedene Bildschirmgrößen
+* Dynamische Darstellung abhängig von Wetterbedingungen
+
+---
+
+## Technologien
+
+* HTML5
+* CSS3
+* JavaScript (Vanilla)
+* Open-Meteo API
+* Git / GitHub
+* GitHub Pages (Deployment)
+
+---
+
+## Projektstruktur
+
+```
+meteo-frendo/
+├── index.html
+├── today.html
+├── forecast.html
+├── search.html
+├── favorites.html
+├── assets/
+│   ├── css/
+│   ├── js/
+│   └── img/
+└── sitemap.xml
+```
+
+---
+
+## Lokale Ausführung
+
+Repository klonen:
+
+```
+git clone https://github.com/asmrrax-star/meteo-frendo.git
+```
+
+Danach die Datei `index.html` im Browser öffnen.
+
+Es ist kein Build-Prozess oder zusätzliche Software erforderlich.
+
+---
+
+## Ziel des Projekts
+
+Ziel war es, den Umgang mit:
+
+* REST-APIs
+* asynchronem JavaScript (fetch, async/await)
+* strukturierter Frontend-Entwicklung ohne Framework
+* Versionskontrolle mit Git
+* Deployment über GitHub Pages
+
+praktisch umzusetzen.
+
+---
+
+## Autor
+
+Srecko
+Informatiker EFZ – Applikationsentwicklung
+Schweiz
