@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Impressum von MeteoBuddy." />
+  <meta name="robots" content="noindex,follow" />
+  <title>MeteoBuddy – Impressum</title>
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="icon" href="./assets/img/newicon.png" type="image/svg+xml" />
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="brand">
+      <img src="./assets/img/newicon.png" alt="MeteoBuddy Logo" />
+      <div>
+        <div class="title">MeteoBuddy</div>
+        <div class="subtitle">Impressum</div>
+      </div>
+    </div>
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a href="./index.html" data-nav="home">Home</a>
+      <a href="./search.html" data-nav="search">Suche</a>
+      <a href="./today.html" data-nav="today">Heute</a>
+      <a href="./forecast.html" data-nav="forecast">Forecast</a>
+      <a href="./favorites.html" data-nav="favorites">Favoriten</a>
+      <a href="./kontakt.html" data-nav="kontakt">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="card">
+    <h1>Impressum</h1>
+    <p class="muted">  Dies ist ein Schulprojekt im Rahmen der Ausbildung zum Informatiker EFZ (Applikationsentwicklung).</p>
+    <p>
+      <strong>Betreiber:</strong> Srecko Radisavljevic<br>
+      <strong>Adresse:</strong> Lakefront Center, Inseliquai 12B, 6005 Luzern<br>
+      <strong>E-Mail:</strong> radisavljevic.srecko@bene-edu.ch<br>
+    </p>
+    <p class="muted">
+      Diese Webseite dient ausschliesslich zu Lern- und Demonstrationszwecken.
+    </p>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-links">
+      <a href="./impressum.html">Impressum</a>
+      <a href="./datenschutz.html">Datenschutz</a>
+    </div>
+    <small>© <span id="year"></span> MeteoFrendo</small>
+  </div>
+</footer>
+
+<script type="module">
+  document.querySelectorAll("#year").forEach(y => y.textContent = new Date().getFullYear());
+</script>
+</body>
+</html>

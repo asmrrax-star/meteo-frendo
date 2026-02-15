@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <!-- Grundeinstellungen der Webseite -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Beschreibung der Seite Übersicht -->
+  <meta name="description" content="MeteoFrendo: Eine kleine Wetter-Website mit Open-Meteo API (Luzern als Default)." />
+  <meta name="robots" content="index,follow" />
+ 
+    <!-- Titel im Browser-Tab -->
+  <title>MeteoFrendo – Home</title>
+  
+  <!-- Zentrales Stylesheet -->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  
+<!-- Icon im Browser-Tab -->
+<link rel="icon" href="./assets/img/newicon.png" type="image/svg+xml" />
+</head>
+
+<body>
+
+<!-- Kopfbereich mit Logo und Navigation -->
+<header>
+  <div class="container">
+    
+    <!-- Markenbereich (Name und Logo) -->    
+    <div class="brand">
+      <img src="./assets/img/newicon.png" alt="MeteoFrendo Logo" />
+      <div>
+        <div class="title">MeteoFrendo</div>
+        <div class="subtitle">Wetter in Sekunden – Default: Luzern</div>
+      </div>
+    </div>
+ 
+    <!-- Hauptnavigation der Webseite -->
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a href="./index.html" data-nav="home">Home</a>
+      <a href="./search.html" data-nav="search">Suche</a>
+      <a href="./today.html" data-nav="today">Heute</a>
+      <a href="./forecast.html" data-nav="forecast">Forecast</a>
+      <a href="./favorites.html" data-nav="favorites">Favoriten</a>
+      <a href="./kontakt.html" data-nav="kontakt">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Begrüssungs-Card: Begrüssung, Vorstellung, Einführung -->
+<section class="card welcome-card">
+  <!-- Überschrift der Begrüssung -->
+  <h2>Willkommen auf MeteoFrendo ☁️☀️</h2>
+  
+  <!-- Kurze Erklärung und Einführung -->
+  <p class="muted">
+    Hallo und herzlich willkommen bei MeteoFrendo! Diese Website wurde im Zusammenhang mit dem Modul 293 
+    entwickelt und bietet dir schnellen Zugriff auf Wetterinformationen für verschiedene Städte weltweit! 
+    
+  </p>
+
+  <p class="muted">
+    Datenquelle: Open-Meteo (API).
+  </p>
+</section>
+
+<!-- Hauptinhalt der Startseite -->
+<main class="container">
+  
+  <!-- Grid mit den wichtigsten Funktionen der Startseite -->
+  <div class="grid">
+
+    <!-- Karte: Aktuelles Wetter (Quick-Weather) -->
+    <section class="card">
+      <h2>Quick-Weather</h2>
+      <p class="muted">Zeigt das aktuelle Wetter für die ausgewählte Stadt (Default: Luzern).</p>
+      
+      <!-- Statusanzeige (Temperatur oder Laden) -->
+      <div id="homeStatus" class="badge">Lade…</div>
+      
+      <!-- Hier werden die Wetterdaten per JavaScript eingefügt -->
+      <div id="homeWeather" style="margin-top:10px;"></div>
+    </section>
+    
+    <!-- Karte: Hier wird ein Wätterschmöcker Video gezeigt -->
+    <section class="card">
+  <h2>Wichtige Vorhersage</h2>
+
+  <p class="muted">
+    In diesem Video sagt uns der Wätterschmöcker Martin Horat (RIP) den Winter voraus.
+  </p>
+
+  <!-- Responsiver Video-Container -->
+  <div class="video-wrapper">
+    <iframe
+      src="https://www.youtube.com/embed/jYrhk3D8Fas"
+      title="Wetterprognose"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
+
+<!-- Karte: Kurze Anleitung zur Benutzung der Webseite -->
+  <section class="card">
+    <h2>Wie du es benutzt</h2>
+    <ol>
+      <li>Geh auf <strong>Suche</strong> und wähle eine Stadt.</li>
+      <li>Schau <strong>Heute</strong> oder <strong>Forecast</strong> an.</li>
+      <li>Speichere Städte in <strong>Favoriten</strong>.</li>
+      <li><strong>Kontakt</strong> um mir eine Nachricht zu hinterlassen! </li>
+      <li>Geniesse das Wetter!</li>
+    </ol>
+  </section>
+</main>
+
+<!-- Fussbereich der Webseite -->
+<footer>
+  <div class="container">
+    
+    <!-- Rechtliche Links -->
+    <div class="footer-links">
+      <a href="./impressum.html">Impressum</a>
+      <a href="./datenschutz.html">Datenschutz</a>
+    </div>
+    
+    <!-- Copyright -->
+    <small>© <span id="year"></span> MeteoFrendo</small>
+  </div>
+</footer>
+
+<!-- JavaScript für die Startseite -->
+<script type="module" src="./assets/js/pages/index.js"></script>
+
+</body>
+</html>
+

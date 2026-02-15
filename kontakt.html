@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Kontaktformular für MeteoBuddy (mit Pflichtfeld-Prüfung)." />
+  <meta name="robots" content="noindex,follow" />
+  <title>MeteoBuddy – Kontakt</title>
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="icon" href="./assets/img/newicon.png" type="image/svg+xml" />
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="brand">
+      <img src="./assets/img/newicon.png" alt="MeteoFrendo Logo" />
+      <div>
+        <div class="title">MeteoFrendo</div>
+        <div class="subtitle">Kontakt</div>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a href="./index.html" data-nav="home">Home</a>
+      <a href="./search.html" data-nav="search">Suche</a>
+      <a href="./today.html" data-nav="today">Heute</a>
+      <a href="./forecast.html" data-nav="forecast">Forecast</a>
+      <a href="./favorites.html" data-nav="favorites">Favoriten</a>
+      <a href="./kontakt.html" data-nav="kontakt">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="card">
+    <h1>Kontakt</h1>
+    <p class="muted">Dieses Formular ist funktionstüchtig ohne Backend: es validiert und zeigt eine Bestätigung. 
+      Schreibe mir doch trotzdem eine Nachricht!</p>
+
+    <form id="contactForm" novalidate>
+      <div class="controls">
+        <input id="name" name="name" type="text" placeholder="Name" required minlength="4" />
+        <input id="email" name="email" type="email" placeholder="E-Mail" required />
+      </div>
+
+      <div class="controls">
+        <textarea id="message" name="message" rows="5" placeholder="Nachricht" required minlength="10"></textarea>
+      </div>
+
+      <div class="controls">
+        <button type="submit">Absenden</button>
+        <span id="formHint" class="muted"></span>
+      </div>
+
+      <div id="formResult" style="margin-top:10px;"></div>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-links">
+      <a href="./impressum.html">Impressum</a>
+      <a href="./datenschutz.html">Datenschutz</a>
+    </div>
+    <small>© <span id="year"></span> MeteoFrendo</small>
+  </div>
+</footer>
+
+<script type="module" src="./assets/js/pages/kontakt.js"></script>
+</body>
+</html>

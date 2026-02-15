@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Stadt suchen und als Auswahl oder Favorit speichern." />
+  <meta name="robots" content="index,follow" />
+  <title>MeteoBuddy – Suche</title>
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="icon" href="./assets/img/newicon.png" type="image/svg+xml" />
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="brand">
+      <img src="./assets/img/newicon.png" alt="MeteoFrendo Logo" />
+      <div>
+        <div class="title">MeteoFrendo</div>
+        <div class="subtitle">Stadt suchen</div>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a href="./index.html" data-nav="home">Home</a>
+      <a href="./search.html" data-nav="search">Suche</a>
+      <a href="./today.html" data-nav="today">Heute</a>
+      <a href="./forecast.html" data-nav="forecast">Forecast</a>
+      <a href="./favorites.html" data-nav="favorites">Favoriten</a>
+      <a href="./kontakt.html" data-nav="kontakt">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="card">
+    <h1>Stadt suchen</h1>
+    <p class="muted">Suche nach einer Stadt und setze sie als aktuelle Auswahl oder speichere sie in Favoriten.</p>
+
+    <form id="searchForm" class="controls" novalidate>
+      <input id="cityInput" name="city" type="text" placeholder="z.B. Luzern" required minlength="2" />
+      <button type="submit">Suchen</button>
+    </form>
+
+    <div id="searchMsg" class="muted"></div>
+    <div id="results" class="grid" style="margin-top:12px;"></div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-links">
+      <a href="./impressum.html">Impressum</a>
+      <a href="./datenschutz.html">Datenschutz</a>
+    </div>
+    <small>© <span id="year"></span> MeteoFrendo</small>
+  </div>
+</footer>
+
+<script type="module" src="./assets/js/pages/search.js"></script>
+</body>
+</html>

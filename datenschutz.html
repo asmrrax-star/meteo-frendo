@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Datenschutzinformationen für MeteoBuddy." />
+  <meta name="robots" content="noindex,follow" />
+  <title>MeteoBuddy – Datenschutz</title>
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="icon" href="./assets/img/newicon.png" type="image/svg+xml" />
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="brand">
+      <img src="./assets/img/newicon.png" alt="MeteoBuddy Logo" />
+      <div>
+        <div class="title">MeteoBuddy</div>
+        <div class="subtitle">Datenschutz</div>
+      </div>
+    </div>
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a href="./index.html" data-nav="home">Home</a>
+      <a href="./search.html" data-nav="search">Suche</a>
+      <a href="./today.html" data-nav="today">Heute</a>
+      <a href="./forecast.html" data-nav="forecast">Forecast</a>
+      <a href="./favorites.html" data-nav="favorites">Favoriten</a>
+      <a href="./kontakt.html" data-nav="kontakt">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="card">
+    <h1>Datenschutz</h1>
+    <p class="muted">Kurz und passend fürs Schulprojekt. (Kein Rechtsrat.)</p>
+
+    <h2>Welche Daten werden verarbeitet?</h2>
+    <ul>
+      <li><strong>Favoriten</strong> werden lokal im Browser gespeichert (LocalStorage).</li>
+      <li>Beim Laden von Wetterdaten werden Anfragen an <strong>Open-Meteo</strong> gesendet (Koordinaten/Request-Daten).</li>
+    </ul>
+
+    <h2>LocalStorage</h2>
+    <p>Die Website speichert Favoriten und die ausgewählte Stadt nur lokal auf deinem Gerät. Du kannst diese Daten löschen, indem du den Browser-Speicher löschst.</p>
+
+    <h2>Kontaktformular</h2>
+    <p>Dieses Schulprojekt sendet keine E-Mails. Es zeigt nur eine Bestätigung an.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-links">
+      <a href="./impressum.html">Impressum</a>
+      <a href="./datenschutz.html">Datenschutz</a>
+    </div>
+    <small>© <span id="year"></span> MeteoFrendo</small>
+  </div>
+</footer>
+
+<script type="module">
+  document.querySelectorAll("#year").forEach(y => y.textContent = new Date().getFullYear());
+</script>
+</body>
+</html>
